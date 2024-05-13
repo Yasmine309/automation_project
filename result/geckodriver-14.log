@@ -1,0 +1,24 @@
+1714354003729	geckodriver	INFO	Listening on 127.0.0.1:52779
+1714354006714	mozrunner::runner	INFO	Running command: "C:\\Users\\Yasminee\\.cache\\selenium\\firefox\\win64\\125.0.2\\firefox.exe" "--marionette" "--remote-debug ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Yasminee\\AppData\\Local\\Temp\\rust_mozprofileYMJlIq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1714354012386	Marionette	INFO	Marionette enabled
+1714354013268	Marionette	INFO	Listening on port 52787
+WebDriver BiDi listening on ws://127.0.0.1:52780
+Read port: 52787
+Read port: 52787
+1714354014892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52780/devtools/browser/d42866f5-5137-4b6f-8567-71afd9e72e72
+1714354043448	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+1714354782470	Marionette	INFO	Stopped listening on port 52787
+Dynamically enable window occlusion 1

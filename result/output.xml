@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-09T09:53:31.723246" rpa="false" schemaversion="5">
+<suite id="s1" name="Loop" source="C:\installer\robot scripts\untitled\pythonProject1\test\loop.robot">
+<kw name="login url" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:53:32.899331" level="INFO">Opening browser 'chrome' to base url 'https://staging.skoleralms.com/'.</msg>
+<arg>https://staging.skoleralms.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-09T09:53:32.897326" elapsed="46.759612"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:19.660938" level="INFO">Typing text 'skolera' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>skolera</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:19.657945" elapsed="0.497117"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:20.156062" level="INFO">Typing text 'asdasd123A!' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>asdasd123A!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:20.156062" elapsed="0.746190"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:20.904254" level="INFO">Clicking button 'Login'.</msg>
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:20.903251" elapsed="0.253145"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-09T09:54:31.158280" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-09T09:54:21.157393" elapsed="10.000887"/>
+</kw>
+<status status="PASS" start="2024-05-09T09:53:32.894323" elapsed="58.263957"/>
+</kw>
+<test id="s1-t1" name="test1" line="16">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:31.162283" level="INFO">Opening url 'https://staging.skoleralms.com/insights/users/students'</msg>
+<arg>https://staging.skoleralms.com/insights/users/students</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-09T09:54:31.162283" elapsed="10.290977"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-09T09:54:51.461333" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-09T09:54:41.460263" elapsed="10.002071"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:51.467336" level="INFO">Clicking element 'xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[1]/td[1]/skolera-multi-checkbox/span/label'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:51.466338" elapsed="0.242056"/>
+</kw>
+<var name="${item}">xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[1]/td[1]/skolera-multi-checkbox/span/label</var>
+<status status="PASS" start="2024-05-09T09:54:51.465337" elapsed="0.245058"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:51.712398" level="INFO">Clicking element 'xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[2]/td[1]/skolera-multi-checkbox/span/label'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:51.710395" elapsed="0.431110"/>
+</kw>
+<var name="${item}">xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[2]/td[1]/skolera-multi-checkbox/span/label</var>
+<status status="PASS" start="2024-05-09T09:54:51.710395" elapsed="0.431110"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:52.144506" level="INFO">Clicking element 'xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[3]/td[1]/skolera-multi-checkbox/span/label'.</msg>
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:52.142503" elapsed="0.483125"/>
+</kw>
+<var name="${item}">xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/tbody/tr[3]/td[1]/skolera-multi-checkbox/span/label</var>
+<status status="PASS" start="2024-05-09T09:54:52.141505" elapsed="0.485129"/>
+</iter>
+<var>${item}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-05-09T09:54:51.464335" elapsed="1.163294"/>
+</for>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:52.639631" level="INFO">Clicking element 'xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/thead/tr/th[10]/span/i'.</msg>
+<arg>xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/thead/tr/th[10]/span/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:52.639631" elapsed="0.475119"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:53.137759" level="INFO">Clicking element 'xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/thead/tr/th[10]/span/div/div[4]'.</msg>
+<arg>xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-insights-students/div[1]/div/div[3]/div/div/div[1]/div[2]/div/table/thead/tr/th[10]/span/div/div[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:53.136756" elapsed="0.573670"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-09T09:54:53.731434" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[2]/div/mat-dialog-container/skolera-confirmation/div/div/div/div[2]/div/button[2]'.</msg>
+<arg>xpath=/html/body/div[4]/div[2]/div/mat-dialog-container/skolera-confirmation/div/div/div/div[2]/div/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-09T09:54:53.730431" elapsed="0.319078"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-09T09:55:04.068516" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-09T09:54:54.067515" elapsed="10.001890"/>
+</kw>
+<status status="PASS" start="2024-05-09T09:54:31.159279" elapsed="32.911125"/>
+</test>
+<kw name="end browser" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-09T09:55:04.079406" elapsed="4.719368"/>
+</kw>
+<status status="PASS" start="2024-05-09T09:55:04.077404" elapsed="4.722366"/>
+</kw>
+<doc>Test  for loop</doc>
+<status status="PASS" start="2024-05-09T09:53:31.729249" elapsed="97.070521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Loop">Loop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

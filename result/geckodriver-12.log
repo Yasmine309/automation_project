@@ -1,0 +1,19 @@
+1714352642587	geckodriver	INFO	Listening on 127.0.0.1:52582
+1714352645274	mozrunner::runner	INFO	Running command: "C:\\Users\\Yasminee\\.cache\\selenium\\firefox\\win64\\125.0.2\\firefox.exe" "--marionette" "--remote-debug ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Yasminee\\AppData\\Local\\Temp\\rust_mozprofileNHUXRU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1714352649290	Marionette	INFO	Marionette enabled
+1714352649632	Marionette	INFO	Listening on port 52590
+Read port: 
+1714352649667	geckodriver::browser	WARN	Failed fo convert  to u16
+WebDriver BiDi listening on ws://127.0.0.1:52583
+Read port: 52590
+Read port: 52590
+1714352651150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52583/devtools/browser/9ca2d947-fb9f-41b0-8b67-8f7e7503cbc3
+1714352679390	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1714352798386	Marionette	INFO	Stopped listening on port 52590
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+console.error: (new Error("Data is not ready.", "resource://gre/modules/JSONFile.sys.mjs", 178))
