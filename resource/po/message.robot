@@ -14,6 +14,9 @@ ${recieve_checkbox}             xpath=/html/body/app-root/div[1]/main-component/
 ${sender_field}                 xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-messages/div/div/div/div/div[1]/div/div/div[2]/div/input
 ${Recipient_field}              xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-messages/div/div/div/div/div[1]/div/div/div[3]/div/input
 
+${CHECKBOX_XPATH}               xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-messages/div/div/div/div/div[1]/div/div/div[7]/span/label
+
+
 ${select_message}               xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-messages/div/div/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div/a/div[1]/div[1]/div[2]/div/h4
 ${selectframe_texteditor}       xpath=/html/body/app-root/div[1]/main-component/div/div/div/app-messages/div/div/div/div/div[2]/div[2]/div/messages-conversation/div/div[3]/skolera-editor/tinymce/div/div/div[2]/iframe
 ${inputtext_texteditor}         id=tinymce
@@ -64,6 +67,27 @@ Check recieve checkbox
 sender field
    [Arguments]     ${text}
     input text      ${sender_field}        ${text}
+
+
+Attempt Checkbox mymessage
+    [Arguments]    ${checked}    ${unchecked}
+    Click Element    ${CHECKBOX_XPATH}
+    Sleep    1s
+    ${is_checked}    Run Keyword And Return Status    Element Should Be Selected    ${CHECKBOX_XPATH}
+    Run Keyword If    '${checked}' == 'True' and not ${is_checked}    Click Element    ${CHECKBOX_XPATH}
+    Run Keyword If    '${unchecked}' == 'True' and ${is_checked}    Click Element    ${CHECKBOX_XPATH}
+    Sleep    2s
+
+Write message2
+  click element      ${select_message}
+  sleep              10s
+  Select Frame       ${selectframe_texteditor}
+  sleep              10s
+  [Arguments]     ${text}
+  Input Text         ${inputtext_texteditor}     ${text}
+  SeleniumLibrary.unselect frame
+  sleep              10s
+  Click Element     ${sendmessage_button}
 
 
 Recipient field
