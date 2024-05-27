@@ -6,7 +6,7 @@ Resource     ../resource/common.robot
 Suite Setup     login to skolera2
 Suite Teardown    end browser
   # robot -d result test/data_manage_message.robot
-
+# all keywords from file po --> message.robot
 *** Test Cases ***
 Check and Uncheck my message checkbox
     [Documentation]    Test my check message checkbox
