@@ -4,7 +4,7 @@ Library    ../CustomLibs/Csv.py
 Resource     ../resource/common.robot
 Resource     ../resource/po/login.robot
 Resource     ../resource/DataManager.robot
-
+#create one keyword in app keyword file for the common steps 
 *** Keywords ***
 Login With Credentials From CSV
     [Documentation]    Log in with credentials from a CSV file
